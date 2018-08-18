@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sigal Portfolio</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	</head>
+	<body>
+		<nav class="navbar-header">
+			<ul class="navbar-list">
+				<li>home</li>
+				<li>about me</li>
+				<li>projects</li>
+				<li>contact</li>
+			</ul>
+		</nav>
+		<div class="container about-me">
+			<h1>about me</h1>
+		</div>
+		<div class="container projects">
+			<h1>projects</h1>
+			<div class="row">
+				<div class="col-md-9 projects-row">
+					<div class="project coarse-coding">
+						<!-- <img class="" -->
+						<div class="project-descr">
+							<h4>Sigal Sax</h4>
+							<h5>words</h5>
+							<button class="learn-more" onclick="learn()">learn more</button>
+						</div>
+					</div>
+					<div class="project kosher-wand">
+						<!-- <img class="" -->
+						<div class="project-descr">
+							<h4>The Kosher Wanderer</h4>
+							<h5>words</h5>
+							<button class="learn-more" onclick="learn()">learn more</button>
+							<div class="learn-more-story">
+							</div>
+
+						</div>
+					</div>
+					<div class="project intra-leag">
+						<!-- <img class="" -->
+						<div class="project-descr">
+							<h4>Intraleagues</h4>
+							<h5>words</h5>
+							<button class="learn-more" onclick="learn()">learn more</button>
+							<div class="learn-more-story">
+								I am supposed to be hidden
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container contacts">
+			<h1>contact</h1>
+		</div>
+	</body>
+</html>
+
+<script>
+function learn() {
+	var test = document.querySelector('.projects-row');
+	test.classList.toggle('selected');
+	// $(.'projects-row').addClass('selected');
+	console.log(test);
+	var test = document.querySelector('.learn-more-story');
+	test.classList.toggle('test');
+	 document.querySelector('learn-more-story').innerHTML== "You pressed ";
+
+}
+</script>
