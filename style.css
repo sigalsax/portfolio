@@ -7,23 +7,28 @@ li {
   .navbar-list li {
     padding: 1rem; }
 
-.projects-row {
+.projects-parent {
   display: flex;
   margin: 0 auto;
   transition: 1s; }
 
-.project {
+.project-child {
   padding: 2rem;
-  margin: 0 auto;
-  background: red; }
+  margin: 0 auto; 
+  padding-bottom: 10rem;
+}
+
+.project-descr-inner {
+  background-color: red;
+}
 
 .selected {
   padding-bottom: 10rem; }
 
-.learn-more-story {
+.not-active {
   visibility: hidden; }
 
-.test {
-  visibility: visible; }
+.active {
+    /*padding-bottom: 10rem;*/ }
 
 /*# sourceMappingURL=style.css.map */

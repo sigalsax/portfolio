@@ -20,33 +20,43 @@
 		<div class="container projects">
 			<h1>projects</h1>
 			<div class="row">
-				<div class="col-md-9 projects-row">
-					<div class="project coarse-coding">
+				<div class="col-md-9 projects-parent">
+					<div class="project-child coarse-coding">
 						<!-- <img class="" -->
 						<div class="project-descr">
-							<h4>Sigal Sax</h4>
-							<h5>words</h5>
-							<button class="learn-more" onclick="learn()">learn more</button>
+							<div class="project-descr-inner">
+								<h4>Sigal Sax</h4>
+								<h5>words</h5>
+								<button class="learn-more">learn more</button>
+							</div>
+							<div class="learn-more-story not-active">
+								I am supposed to be hidden
+							</div>
 						</div>
 					</div>
-					<div class="project kosher-wand">
+					<div class="project-child kosher-wand">
 						<!-- <img class="" -->
 						<div class="project-descr">
-							<h4>The Kosher Wanderer</h4>
-							<h5>words</h5>
-							<button class="learn-more" onclick="learn()">learn more</button>
-							<div class="learn-more-story">
+							<div class="project-descr-inner">
+								<h4>The Kosher Wanderer</h4>
+								<h5>words</h5>
+								<button class="learn-more">learn more</button>
+							</div>
+							<div class="learn-more-story not-active">
+								I am supposed to be hidden
 							</div>
 
 						</div>
 					</div>
-					<div class="project intra-leag">
+					<div class="project-child intra-leag">
 						<!-- <img class="" -->
 						<div class="project-descr">
-							<h4>Intraleagues</h4>
-							<h5>words</h5>
-							<button class="learn-more" onclick="learn()">learn more</button>
-							<div class="learn-more-story">
+							<div class="project-descr-inner">
+								<h4>Intraleagues</h4>
+								<h5>words</h5>
+								<button class="learn-more">learn more</button>
+							</div>
+							<div class="learn-more-story not-active">
 								I am supposed to be hidden
 							</div>
 
@@ -61,15 +71,4 @@
 	</body>
 </html>
 
-<script>
-function learn() {
-	var test = document.querySelector('.projects-row');
-	test.classList.toggle('selected');
-	// $(.'projects-row').addClass('selected');
-	console.log(test);
-	var test = document.querySelector('.learn-more-story');
-	test.classList.toggle('test');
-	 document.querySelector('learn-more-story').innerHTML== "You pressed ";
-
-}
-</script>
+<script type="text/javascript" src="script.js"></script>
