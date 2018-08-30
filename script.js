@@ -6,14 +6,3 @@ learnButton.forEach(er => er.addEventListener("click", function () {
 	}
 	this.parentNode.nextElementSibling.classList.remove('not-active');
 }));
-
-// function hello (e){
-// 	if (event.target.parentNode.nextElementSibling.classList.contains('not-active')){
-// 		event.target.parentNode.nextElementSibling.classList.remove('not-active');
-// 		console.log(event.target.parentNode.nextElementSibling.classList);
-// 	} else {
-// 		event.target.parentNode.nextElementSibling.classList.add('not-active');
-// 		console.log(event.target.parentNode.nextElementSibling.classList);
-// 	}
-
-// }
