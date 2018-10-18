@@ -1,37 +1,83 @@
-li {
-	list-style: none;
+html { font-size: 62.5%; }
+
+li { list-style: none; }
+
+body {
+	.container { max-width: 1490px; }
 }
+
+p { font-size: 1.4rem; }
+
+.logo-wrapper {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.sigal-logo { width: 30rem; }
 
 .navbar-list {
 	display: flex;
 	justify-content: center;
-	li{
-		padding: 1rem;
+	li {
+		padding: 2rem 4.5rem 2rem 4.5rem; 
+    font-family: 'oswald';
+    letter-spacing: 0.15rem; 
+    color: #6d6663;
+    font-weight: 300;
+    font-size: 2rem;
 	}
 }
 
-.projects-row {
-	display: flex;
-	margin: 0 auto;
-	transition: 1s;
+.projects-parent {
+  display: flex;
+  margin: 0 auto;
+  transition: 1s; }
 
-}
-
-.project {
-	padding: 2rem;
-	margin: 0 auto;
-	background: red;
-}
-
-.selected {
-	padding-bottom: 10rem;
-	
+.project-child {
+  padding: 3rem 8rem 8rem 3rem;
+  margin: 0 auto; 
+  padding-bottom: 15rem;
+  &:hover {
+  }
 }
 
-.learn-more-story {
-	visibility: hidden;
+.project-descr { display: flex; }
+
+.selected { padding-bottom: 15rem; }
+
+.not-active { visibility: hidden; }
+
+.project-computer {
+    width: 50rem;
+    height: 32rem;
 }
-.test{
-	visibility: visible;
+
+.project-mobile {
+    width: 15rem;
+    height: 25rem;
 }
+
+.mobile-wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.project-logo {
+  margin: 0 auto;
+  width: 50rem;
+  padding: 5rem;
+}
+
+.projects {
+	.top { display: flex; }
+	.description {
+	  display: flex;
+	  justify-content: center;
+	  flex-direction: column;
+	}
+}
+
+
+
 
