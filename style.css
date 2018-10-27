@@ -10,18 +10,24 @@ body .container {
 p {
   font-size: 1.4rem; }
 
+.navbar-header {
+  display: flex;
+  justify-content: flex-end;
+  margin: 8rem 8rem 0rem 0rem; }
+
 .logo-wrapper {
-  text-align: center;
-  padding-top: 3rem; }
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
 
 .sigal-logo {
-  width: 30rem; }
+  width: 14rem; }
 
 .navbar-list {
   display: flex;
   justify-content: center; }
   .navbar-list li {
-    padding: 2rem 4.5rem 2rem 4.5rem;
+    padding: 2rem 2.5rem 2rem 2.5rem;
     font-family: 'oswald';
     letter-spacing: 0.15rem;
     color: #6d6663;
@@ -62,13 +68,59 @@ p {
 
 .project-logo {
   margin: 0 auto;
-  width: 50rem;
+  width: 35rem;
   padding: 5rem; }
 
 .projects .top {
-  display: flex; }
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem; }
 .projects .description {
   display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.opportunity {
+  padding: 10rem 25rem 10rem 25rem; }
+
+.user-flow-images {
+  text-align: center; }
+
+.user-flow-outline {
+  padding: 5rem;
+  background: white;
+  width: 62rem;
+  box-shadow: 0.2rem 0.2rem 3rem rgba(0, 0, 0, 0.3); }
+
+.box {
+  padding: 3rem;
+  width: 100%;
+  margin: 0 auto;
+  background: #f6f6f6; }
+
+.info {
+  width: 80%;
+  margin: 0 auto; }
+
+.end-product-images {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto; }
+
+.end-product-box {
+  padding: 10rem; }
+
+.end-product-computer {
+  width: 83rem;
+  height: 54rem; }
+
+.end-product-mobile {
+  width: 38rem;
+  height: 47rem; }
+
+.end-product-mobile-flex {
+  display: flex;
+  padding: 3rem;
   justify-content: center;
   flex-direction: column; }
 
