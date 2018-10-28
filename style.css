@@ -1,53 +1,145 @@
-/*
-Error: Invalid CSS after "...rem 10rem 25rem": expected "{", was ";"
-        on line 111 of style.scss
+html {
+  font-size: 62.5%; }
 
-106: 	}
-107: }
-108: 
-109: .opportunity {
-110: <<<<<<< HEAD
-111: 	padding: 10rem 25rem 10rem 25rem;
-112: =======
-113: 	padding: 14rem 35rem 14rem 35rem;
-114: }
-115: 
-116: .solution {
+li {
+  list-style: none; }
 
-Backtrace:
-style.scss:111
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-3.6.0/lib/sass/scss/parser.rb:1278:in `expected'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-3.6.0/lib/sass/scss/parser.rb:1208:in `expected'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-3.6.0/lib/sass/scss/parser.rb:1203:in `tok!'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-3.6.0/lib/sass/scss/parser.rb:677:in `block'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-3.6.0/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-3.6.0/lib/sass/scss/parser.rb:697:in `block_child'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-3.6.0/lib/sass/scss/parser.rb:686:in `block_contents'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-3.6.0/lib/sass/scss/parser.rb:678:in `block'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-3.6.0/lib/sass/scss/parser.rb:670:in `ruleset'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-3.6.0/lib/sass/scss/parser.rb:696:in `block_child'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-3.6.0/lib/sass/scss/parser.rb:689:in `block_contents'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-3.6.0/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-3.6.0/lib/sass/scss/parser.rb:41:in `parse'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-3.6.0/lib/sass/engine.rb:414:in `_to_tree'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-3.6.0/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-3.6.0/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Users/ssax/.rvm/gems/ruby-2.5.1/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...rem 10rem 25rem\": expected \"{\", was \";\"\A         on line 111 of style.scss\A \A 106: 	}\A 107: }\A 108: \A 109: .opportunity {\A 110: <<<<<<< HEAD\A 111: 	padding: 10rem 25rem 10rem 25rem;\A 112: =======\A 113: 	padding: 14rem 35rem 14rem 35rem;\A 114: }\A 115: \A 116: .solution {"; }
+body .container {
+  max-width: 1490px; }
+
+h3 {
+  text-align: center; }
+
+p {
+  font-size: 1.7rem;
+  font-family: 'Roboto', sans-serif; }
+
+.row {
+  margin-top: 4rem; }
+
+.navbar-header {
+  display: flex;
+  justify-content: flex-end;
+  margin: 8rem 8rem 0rem 0rem; }
+
+.navbar-header {
+  display: flex;
+  justify-content: flex-end;
+  margin: 8rem 8rem 0rem 0rem; }
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.sigal-logo {
+  width: 14rem; }
+
+.navbar-list {
+  display: flex;
+  justify-content: center; }
+  .navbar-list li {
+    padding: 2rem 2.5rem 2rem 2.5rem;
+    font-family: 'oswald';
+    letter-spacing: 0.15rem;
+    color: #6d6663;
+    font-weight: 300;
+    font-size: 2rem; }
+
+.projects-parent {
+  display: flex;
+  margin: 0 auto;
+  transition: 1s; }
+
+.project-child {
+  padding: 3rem 8rem 8rem 3rem;
+  margin: 0 auto;
+  padding-bottom: 15rem; }
+
+.project-descr {
+  display: flex; }
+
+.selected {
+  padding-bottom: 15rem; }
+
+.not-active {
+  visibility: hidden; }
+
+.project-computer {
+  width: 50rem;
+  height: 32rem; }
+
+.project-mobile {
+  width: 15rem;
+  height: 25rem; }
+
+.mobile-wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem; }
+
+.project-logo {
+  margin: 0 auto;
+  width: 35rem;
+  padding: 5rem; }
+
+.projects .top {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem; }
+.projects .description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.opportunity {
+  padding: 14rem 35rem 14rem 35rem; }
+
+.solution {
+  padding-top: 10rem; }
+
+.user-flow-info {
+  padding-bottom: 16rem; }
+
+.user-flow-images {
+  text-align: center; }
+
+.user-flow-outline {
+  padding: 2rem;
+  background: white;
+  width: 65rem;
+  box-shadow: 0.2rem 0.2rem 3rem rgba(0, 0, 0, 0.3); }
+
+.box {
+  padding: 5rem 2rem 2rem 2rem;
+  width: 100%;
+  margin: 0 auto;
+  background: #f6f6f6; }
+
+.info {
+  width: 80%;
+  margin: 0 auto; }
+
+.end-product-images {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto; }
+
+.end-product-box {
+  padding: 10rem; }
+
+.end-product-computer {
+  width: 83rem;
+  height: 54rem; }
+
+.end-product-mobile {
+  width: 38rem;
+  height: 47rem; }
+
+.end-product-mobile-flex {
+  display: flex;
+  padding: 3rem;
+  justify-content: center;
+  flex-direction: column; }
+
+/*# sourceMappingURL=style.css.map */

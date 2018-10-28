@@ -99,6 +99,7 @@ p {
 		justify-content: center;
 		margin-top: 5rem;
 	}
+
 	.description {
 	  display: flex;
 	  justify-content: center;
@@ -107,9 +108,6 @@ p {
 }
 
 .opportunity {
-<<<<<<< HEAD
-	padding: 10rem 25rem 10rem 25rem;
-=======
 	padding: 14rem 35rem 14rem 35rem;
 }
 
@@ -118,44 +116,16 @@ p {
 }
 .user-flow-info {
 	padding-bottom: 16rem;
->>>>>>> Fixes scss and adds intial styling for blog page
 }
 
 .user-flow-images {
 	text-align: center;
 }
-<<<<<<< HEAD
 
 .user-flow-outline {
-	padding: 5rem;
+	padding: 2rem;
 	background: white;
-	width: 62rem;
-	box-shadow: 0.2rem 0.2rem 3rem rgba(0, 0, 0, 0.3);
-}
-
-.box {
-	padding: 3rem;
-	width: 100%;
-	margin: 0 auto;
-	background: #f6f6f6;
-}
-
-.info {
-	width: 80%;
-	margin: 0 auto;
-}
-.end-product-images {
-	display: flex;
-	justify-content: center;
-	margin: 0 auto;
-}
-
-=======
-
-.user-flow-outline {
-	padding: 5rem;
-	background: white;
-	width: 55rem;
+	width: 65rem;
 	box-shadow: 0.2rem 0.2rem 3rem rgba(0, 0, 0, 0.3);
 }
 
@@ -176,7 +146,6 @@ p {
 	margin: 0 auto;
 }
 
->>>>>>> Fixes scss and adds intial styling for blog page
 .end-product-box {
   padding: 10rem;
 }
