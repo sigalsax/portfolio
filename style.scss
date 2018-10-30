@@ -1,3 +1,13 @@
+/*
+*
+*     _                           _
+*    /_\__   _____   ___ __ _  __| | ___
+*   //_\\ \ / / _ \ / __/ _` |/ _` |/ _ \
+*  /  _  \ V / (_) | (_| (_| | (_| | (_) |
+*  \_/ \_/\_/ \___/ \___\__,_|\__,_|\___/
+*
+*/
+
 html { font-size: 62.5%; }
 
 li { list-style: none; }
@@ -6,7 +16,7 @@ body {
 	.container { max-width: 1490px; }
 }
 
-h3 {
+h4 {
 	text-align: center;
 }
 p {
@@ -22,13 +32,7 @@ p {
 .navbar-header {
   display: flex;
   justify-content: flex-end;
-  margin: 8rem 8rem 0rem 0rem;
-}
-
-.navbar-header {
-  display: flex;
-  justify-content: flex-end;
-  margin: 8rem 8rem 0rem 0rem;
+  margin: 8rem 0rem 0rem 0rem;
 }
 
 .logo-wrapper {
@@ -137,8 +141,7 @@ p {
 }
 
 .info {
-	width: 80%;
-	margin: 0 auto;
+    padding: 5rem 35rem 0rem 35rem;
 }
 .end-product-images {
 	display: flex;
