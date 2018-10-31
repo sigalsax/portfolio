@@ -13,11 +13,10 @@ html {
 li {
   list-style: none; }
 
-body .container {
-  max-width: 1490px; }
-
-h4 {
-  text-align: center; }
+body {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif !important; }
+  body .container {
+    max-width: 1490px; }
 
 p {
   font-size: 1.7rem;
@@ -49,6 +48,20 @@ p {
     color: #6d6663;
     font-weight: 300;
     font-size: 2rem; }
+
+.box-white {
+  padding: 6rem 35rem 17rem 35rem; }
+
+.section-title {
+  font-size: 2.5rem;
+  text-transform: uppercase; }
+
+.subsection {
+  font-size: 2rem;
+  margin-bottom: 2rem; }
+
+.sub {
+  text-align: center; }
 
 .projects-parent {
   display: flex;
@@ -84,25 +97,25 @@ p {
 
 .project-logo {
   margin: 0 auto;
-  width: 35rem;
-  padding: 5rem; }
+  width: 28rem;
+  padding: 0rem 3rem 0rem 0rem; }
 
-.projects .top {
-  display: flex;
-  justify-content: center;
-  margin-top: 5rem; }
-.projects .description {
-  display: flex;
-  justify-content: center;
-  flex-direction: column; }
-
-.opportunity {
-  padding: 14rem 35rem 14rem 35rem; }
+.projects {
+  margin-top: 10rem; }
+  .projects .top {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem; }
+  .projects .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
 
 .solution {
   padding-top: 10rem; }
 
 .user-flow-info {
+  padding-top: 3rem;
   padding-bottom: 16rem; }
 
 .user-flow-images {
@@ -115,13 +128,10 @@ p {
   box-shadow: 0.2rem 0.2rem 3rem rgba(0, 0, 0, 0.3); }
 
 .box {
-  padding: 5rem 2rem 2rem 2rem;
+  padding: 14rem 35rem 1rem 35rem;
   width: 100%;
   margin: 0 auto;
   background: #f6f6f6; }
-
-.info {
-  padding: 5rem 35rem 0rem 35rem; }
 
 .end-product-images {
   display: flex;
@@ -130,6 +140,9 @@ p {
 
 .end-product-box {
   padding: 10rem; }
+
+.end-product-inner {
+  padding: 0rem 0rem 0rem 11rem; }
 
 .end-product-computer {
   width: 83rem;
