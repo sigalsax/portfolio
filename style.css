@@ -142,7 +142,7 @@ p {
 .end-product-images {
   display: flex;
   justify-content: center;
-  margin: 0 auto; }
+  padding-top: 5rem; }
 
 .end-product-box {
   padding: 10rem; }
@@ -151,12 +151,12 @@ p {
   padding: 0rem 0rem 0rem 11rem; }
 
 .end-product-computer {
-  width: 83rem;
-  height: 54rem; }
+  width: 76rem;
+  height: 47rem; }
 
 .end-product-mobile {
-  width: 38rem;
-  height: 47rem; }
+  width: 33rem;
+  height: 42rem; }
 
 .end-product-mobile-flex {
   display: flex;
