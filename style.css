@@ -164,4 +164,23 @@ p {
   justify-content: center;
   flex-direction: column; }
 
+.footer {
+  width: 35%;
+  margin: 0 auto; }
+  .footer .footer-wrapper {
+    display: flex; }
+  .footer .footer-description {
+    font-size: 1.5rem;
+    padding: 4rem 14rem 4rem 0rem;
+    font-family: 'Open Sans', sans-serif; }
+  .footer .footer-icons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    .footer .footer-icons .footer-icon-list {
+      display: flex; }
+      .footer .footer-icons .footer-icon-list .icon {
+        margin: 1rem;
+        font-size: 1.75rem; }
+
 /*# sourceMappingURL=style.css.map */
