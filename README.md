@@ -5,3 +5,5 @@ This repository holds the source code for my portfolio site! It consists of info
 ### Notes for Editing
 
 This project uses the Sass extension for CSS. To track Sass changes and update the CSS when there is a change, run command ```sass --watch input.scss:output.css```
+
+In this example: ```sass --watch styles.scss:assets/styles.css```
