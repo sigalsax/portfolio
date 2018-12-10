@@ -47,14 +47,21 @@ p {
   justify-content: center; }
   .navbar-list li {
     padding: 2rem 2.5rem 2rem 2.5rem;
-    font-family: 'oswald';
+    font-family: 'Roboto Condensed';
     letter-spacing: 0.15rem;
-    color: #6d6663;
-    font-weight: 300;
-    font-size: 2rem; }
+    font-weight: 500;
+    font-size: 2rem;
+    font-size: 1.7rem;
+    opacity: .5; }
+  .navbar-list :hover {
+    text-decoration: none; }
+  .navbar-list a {
+    color: black; }
 
 .box-white {
-  padding: 6rem 35rem 17rem 35rem; }
+  padding: 14rem 0 14rem 0;
+  width: 100%;
+  margin: 0 auto; }
 
 .section-title {
   font-size: 2.5rem;
@@ -116,12 +123,8 @@ p {
     justify-content: center;
     flex-direction: column; }
 
-.solution {
-  padding-top: 10rem; }
-
 .user-flow-info {
-  padding-top: 3rem;
-  padding-bottom: 16rem; }
+  padding-top: 3rem; }
 
 .user-flow-images {
   text-align: center; }
@@ -133,21 +136,19 @@ p {
   box-shadow: 0.2rem 0.2rem 3rem rgba(0, 0, 0, 0.3); }
 
 .box {
-  padding: 14rem 35rem 1rem 35rem;
+  padding: 14rem 0rem 14rem 0rem;
   width: 100%;
   margin: 0 auto;
   background: #f6f6f6; }
+
+.inner {
+  width: 60%;
+  margin: 0 auto; }
 
 .end-product-images {
   display: flex;
   justify-content: center;
   padding-top: 5rem; }
-
-.end-product-box {
-  padding: 15rem 10rem 10rem 10rem; }
-
-.end-product-inner {
-  padding: 0rem 0rem 0rem 11rem; }
 
 .end-product-computer {
   width: 76rem;
@@ -182,4 +183,4 @@ p {
         margin: 1rem;
         font-size: 1.75rem; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
