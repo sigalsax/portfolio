@@ -50,9 +50,11 @@ p {
 .navbar-list {
 	display: flex;
 	justify-content: center;
+	padding-right: 10rem;
 	li {
 		padding: 2rem 2.5rem 2rem 2.5rem;
-    font-family: 'Roboto Condensed';
+		font-family: 'Roboto', sans-serif;
+		text-transform: uppercase;
     letter-spacing: 0.15rem;
 		font-weight: 500;
     font-size: 2rem;
@@ -74,14 +76,14 @@ p {
 }
 
 .section-title {
-		font-size: 2.5rem;
+		font-size: 4rem;
 		text-transform: uppercase;
 		font-weight: bold;
 }
 
 .subsection {
 	font-size: 2rem;
-	margin-bottom: 2rem;
+	margin-bottom: 5rem;
 }
 
 .sub {
@@ -94,11 +96,31 @@ p {
   transition: 1s; }
 
 .project-child {
-  padding: 3rem 8rem 8rem 3rem;
-  margin: 0 auto;
-  padding-bottom: 15rem;
+	padding: 0rem 0rem 0rem 0rem;
+	margin: 0 auto;
   &:hover {
   }
+}
+
+.next-button {
+	text-transform: uppercase;
+	color: white;
+	justify-content: center;
+  width: 20rem;
+  background: rgba(69,155,182, .7);
+  display: flex;
+  padding: 1rem 0rem 0.25rem 0rem;
+  margin-top: 4rem;
+	border-radius: .5rem;
+	.fa-angle-down {
+		color: white;
+		padding: .5rem 0.7rem 0rem 0rem;
+		font-size: 2rem;
+	}
+}
+
+.next-button-images {
+	margin: 0 auto;
 }
 
 .project-descr { display: flex; }
@@ -108,7 +130,7 @@ p {
 .not-active { visibility: hidden; }
 
 .project-computer {
-    width: 50rem;
+    width: 53rem;
     height: 32rem;
 }
 
@@ -145,7 +167,9 @@ p {
 }
 
 .user-flow-info {
+	width: 60%;
 	padding-top: 3rem;
+	margin: 0 auto;
 }
 
 .user-flow-images {
@@ -154,6 +178,7 @@ p {
 
 .user-flow-outline {
 	padding: 2rem;
+	margin-bottom: 4rem;
 	background: white;
 	width: 58rem;
 	box-shadow: 0.2rem 0.2rem 3rem rgba(0, 0, 0, 0.3);
@@ -203,6 +228,7 @@ p {
 }
 
 .footer {
+	padding-top: 11rem;
 	width: 35%;
   // text-align: center;
   margin: 0 auto;

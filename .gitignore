@@ -1,6 +1,5 @@
 # OS generated files #
-.DS_Store
-.sass-cache/
+**/.DS_Store
 
 # JS files #
 connectionDeets.js
