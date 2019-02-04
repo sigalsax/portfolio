@@ -1,13 +1,26 @@
 <% include partials/head.ejs %>
 <% include partials/nav.ejs %>
-  <h1>contact template</h1>
-  <form id ="contact-form" method="POST" action="/contact">
-    <label for="firstname">First name:</label>
-    <input type="text" name="firstname" value="John">
-    <label for="lastname">Last name:</label>
-    <input type="text" name="lastname" value="Snow">
-    <label for="email">Email:</label>
-    <input type="text" name="email" value="ssax18@gmail.com">
-    <input type="submit" value="submit"/>
-  <p> <%=qs.firstname %> </p>
-</html>
+
+<div class="about-me box-white">
+  <div class="about inner">
+    <div class="section-about-me">
+      <h3 class="section-title">About me</h3>
+      <p class="section-description">The Kosher Wander is an informative travel blog that provides recipes and guidelines on how to maintain a strict diet while traveling (Kosher, vegetarian, gluten-free, etc). From her stories, recipes, and nuggets of advice, the author hopes to show that traveling to remote places  should not require you to compromise on a restricted diet.</p>
+    </div>
+      <img class="about-me-img" src="images/mesquare.png">
+  </div>
+</div>
+<div class="contact box">
+  <div class="contact-info inner">
+    <h3 class="section-title">Contact Me</h3>
+    <form id ="contact-form" method="POST" action="/contact">
+      <div class="contact-row">
+        <h3><input type="text" class="contact-field-area" name="firstname" value="John Snow"></h3>
+        <h3><input type="text" class="contact-field-area" name="email" value="jsnow@winteriscoming.com"></h3>
+      </div>
+      <h3><textarea type="text" name="message" class="contact-field-message" rows="10" cols="76">Message...</textarea></h3>
+      <input type="submit" class="primary-btn" value="submit"/>
+      <p> <%=qs.firstname %> </p>
+  </div>
+</div>
+<% include partials/footer.ejs %>

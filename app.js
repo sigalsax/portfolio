@@ -19,7 +19,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/projects', function(req, res){
-  res.render('projects');
+  res.render('index');
 });
 
 app.get('/about', function(req, res){
@@ -31,7 +31,6 @@ app.get('/contact', function(req, res){
 });
 
 app.post('/contact', urlencodedParser, function(req, res){
-
   // uses gmail as transport service
   var transporter = nodemailer.createTransport({
    service: 'gmail',
@@ -41,15 +40,30 @@ app.post('/contact', urlencodedParser, function(req, res){
       }
   });
 
-  const mailOptions = {
+  const mailOptionsToContact = {
     from: connDetails.username, // sender address
     to: req.body.email, // list of receivers
     subject: 'Confirmation of retrieval from Sigal!', // Subject line
     html: 'Hi ' + req.body.firstname + ', <br><br> Thank you for reaching out! Talk soon! <br><br>Sigal'// plain text body
   };
 
-  // handles the actual sending of the email
-  transporter.sendMail(mailOptions, function (err, info) {
+  const mailOptionsToMe = {
+    from: connDetails.username, // sender address
+    to: connDetails.username, // list of receivers
+    subject: 'New email from site!', // Subject line
+    html: 'From: ' + req.body.firstname + '<br>Message: ' + req.body.message// plain text body
+  };
+
+  // handles the actual sending of the email to client
+  transporter.sendMail(mailOptionsToContact, function (err, info) {
+     if(err)
+       console.log(err)
+     else
+       console.log(info);
+  });
+
+  // handles the actual sending of the email to me
+  transporter.sendMail(mailOptionsToMe, function (err, info) {
      if(err)
        console.log(err)
      else
