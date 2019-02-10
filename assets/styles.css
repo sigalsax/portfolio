@@ -22,6 +22,22 @@ p {
   font-size: 2rem;
   font-family: "Roboto", sans-serif; }
 
+.home-subtitle-wrapper {
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5rem; }
+  .home-subtitle-wrapper .home-subtitle {
+    font-size: 24px;
+    color: #63707e; }
+
+.projects-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 4rem 0rem 2rem 0rem;
+  border-top: 2px solid #f5f6f7;
+  min-height: 43rem; }
+
 .section-description {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -31,34 +47,40 @@ p {
   margin-top: 4rem; }
 
 .navbar-header {
-  display: flex;
-  justify-content: flex-end;
-  margin: 8rem 0rem 0rem 0rem; }
+  width: 80%;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  border-right: 2px solid #f5f6f7;
+  border-left: 2px solid #f5f6f7;
+  border-bottom: 2px solid #f5f6f7; }
 
 .navbar-wrapper {
   display: flex;
   justify-content: center; }
 
 .sigal-logo {
-  width: 14rem; }
+  width: 20rem;
+  float: left;
+  margin-left: 2rem; }
+
+.logo-wrapper {
+  width: 15%; }
 
 .navbar-list {
   display: flex;
-  justify-content: center;
-  padding-right: 10rem; }
+  justify-content: flex-end;
+  padding: 2rem 2rem 0rem 0rem; }
   .navbar-list li {
     padding: 2rem 2.5rem 2rem 2.5rem;
-    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
-    letter-spacing: 0.15rem;
     font-weight: 500;
     font-size: 2rem;
-    font-size: 1.7rem;
-    opacity: .5; }
+    font-size: 1.7rem; }
   .navbar-list :hover {
     text-decoration: none; }
   .navbar-list a {
-    color: black; }
+    color: #63707e; }
 
 .box-white {
   padding: 14rem 0 14rem 0;
@@ -79,15 +101,21 @@ p {
 
 .projects-parent {
   display: flex;
+  justify-content: center;
   margin: 0 auto;
   transition: 1s; }
 
 .project-child {
   padding: 0rem 0rem 0rem 0rem;
   position: relative;
-  width: 550px;
   height: 320px;
   overflow: hidden; }
+
+.kosher-wanderer {
+  width: 550px; }
+
+.cyberark {
+  width: 470px; }
 
 .primary-btn {
   text-transform: uppercase;
@@ -121,18 +149,45 @@ p {
   margin: 10rem auto; }
 
 .project-descr {
-  display: flex;
+  position: relative;
+  width: 50%; }
+
+.overlay {
   position: absolute;
   top: 0;
-  left: 0; }
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #008CBA;
+  transition: .5s ease; }
+
+.project-descr:hover .overlay {
+  opacity: 1; }
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto; }
 
 .project-descr img {
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease; }
 
 .project-child:hover .project-descr img {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
   border-top: 1px solid transparent; }
 
 .selected {
@@ -241,23 +296,26 @@ p {
     padding: 2rem; }
 
 .footer {
-  padding-top: 3rem;
-  width: 35%;
+  padding: 3rem 3rem 3rem 3rem;
+  width: 100%;
+  background-color: #33485F;
   margin: 0 auto; }
   .footer .footer-wrapper {
-    display: flex; }
+    text-align: center; }
   .footer .footer-description {
-    font-size: 1.5rem;
-    padding: 4rem 14rem 4rem 0rem;
+    color: #83909d;
+    font-size: 1.6rem;
     font-family: 'Open Sans', sans-serif; }
   .footer .footer-icons {
     display: flex;
     justify-content: center;
-    flex-direction: column; }
+    flex-direction: column;
+    color: white; }
     .footer .footer-icons .footer-icon-list {
-      display: flex; }
+      display: flex;
+      justify-content: center; }
       .footer .footer-icons .footer-icon-list .icon {
         margin: 1rem;
-        font-size: 1.75rem; }
+        font-size: 2.6rem; }
 
 /*# sourceMappingURL=styles.css.map */

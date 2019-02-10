@@ -2,24 +2,33 @@
 <% include partials/head.ejs %>
 <body>
   <% include partials/nav.ejs %>
-  <div class="container projects">
-			<div class="row">
-				<div class="col-md-9 projects-parent">
-					<div class="project-child kosher-wanderer">
-						<div class="project-descr">
-							<a href= "kosher-wanderer"> <img src="images/koshercomputer.png" class="project-computer"> </a>
-						</div>
-					</div>
-					<div class="project-child cyberark">
-						<div class="project-descr">
-							<img src="images/cyber_flag.png" class="project-computer cyberark-logo">
-							<!-- <div class="mobile-wrapper">
-								<img src="images/cyberarklogo.png" class="project-mobile">
-							</div> -->
-						</div>
-					</div>
-				</div>
-			</div>
-	</div>
+  <div class="home-subtitle-wrapper">
+      <h2 class="home-subtitle">Freelance Web Designer & Developer based out of Tel Aviv, Israel. Experienced in designing & developing websites and applications.</h2>
+  </div>
+  <div class="projects-wrapper">
+    <div class="projects-parent">
+      <div class="project-child kosher-wanderer">
+        <div class="project-descr container">
+          <a href= "kosher-wanderer image"> <img src="images/koshercomputer.png" class="project-computer"> </a>
+          <div class="overlay">
+            <div class="text">
+              Hello World
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="project-child cyberark">
+        <div class="project-descr container">
+          <a href= "image"> <img src="images/cyber_flag.png" class="project-computer cyberark-logo">
+            <div class="overlay">
+              <div class="text">
+                Hello World
+                </div>
+            </div>
+        </div>
+      </div>
+  </div>
+</div>
+
 
   <% include partials/footer.ejs %>
