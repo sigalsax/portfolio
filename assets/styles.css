@@ -32,7 +32,6 @@ p {
     color: #63707e; }
 
 .projects-wrapper {
-  width: 80%;
   margin: 0 auto;
   padding: 4rem 0rem 2rem 0rem;
   border-top: 2px solid #f5f6f7;
@@ -108,14 +107,9 @@ p {
 .project-child {
   padding: 0rem 0rem 0rem 0rem;
   position: relative;
+  width: 550px;
   height: 320px;
   overflow: hidden; }
-
-.kosher-wanderer {
-  width: 550px; }
-
-.cyberark {
-  width: 470px; }
 
 .primary-btn {
   text-transform: uppercase;
@@ -159,10 +153,29 @@ p {
   left: 0;
   right: 0;
   height: 100%;
-  width: 100%;
   opacity: 0;
-  background-color: #008CBA;
-  transition: .5s ease; }
+  background-color: #3B444B;
+  transition: .75s ease;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  .overlay .overlay-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    .overlay .overlay-text .overlay-text-primary {
+      color: white; }
+  .overlay .overlay-button {
+    width: 100%;
+    float: left;
+    margin: 3rem -11rem 0rem 11rem; }
+    .overlay .overlay-button .overlay-button-text {
+      width: 60%;
+      padding: 2rem;
+      text-align: left; }
 
 .project-descr:hover .overlay {
   opacity: 1; }
