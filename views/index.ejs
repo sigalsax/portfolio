@@ -3,38 +3,72 @@
 <body>
   <% include partials/nav.ejs %>
   <div class="home-subtitle-wrapper">
-      <h2 class="home-subtitle">Freelance Web Designer & Developer based out of Tel Aviv, Israel. Experienced in designing & developing websites and applications.</h2>
+      <h2 class="home-subtitle">"I am a Freelance Web Designer & Developer based out of Tel Aviv, Israel. Experienced in designing & developing websites and applications."</h2>
   </div>
   <div class="projects-wrapper">
     <div class="projects-parent">
       <div class="project-child kosher-wanderer">
         <div class="project-descr container">
-          <a href= "kosher-wanderer project-image"> <img src="images/koshercomputer.png" class="project-computer"> </a>
-          <div class="overlay ">
+          <a href= "kosher-wanderer"> <img src="images/koshercomputer.png" class="project-image project-computer"> </a>
+          <div class="overlay">
             <!-- <div class="overlay-text">
                 <h2 class="overlay-text-primary">The Kosher Wanderer</h2>
                 <h3>Site, Logo, Design</h3>
             </div> -->
-              <div class=overlay-text>
+            <a href="kosher-wanderer">
+              <div class="overlay-text">
                 <p>View Project</p>
-                </div>
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </a>
           </div>
         </div>
       </div>
       <div class="project-child cyberark">
         <div class="project-descr container">
-          <a href= "project-image"> <img src="images/cyber_flag.png" class="project-computer cyberark-logo"></a>
-            <div class="overlay">
+          <a href= "project-image"> <img src="images/cyber_flag.png" class="project-image project-computer cyberark-logo"></a>
+          <div class="overlay">
               <!-- <div class="overlay-text">
                 <h2 class="overlay-text-primary">Cyberark Impact 2018</h2>
                 <h3 class="overlay-text-secondary">App, Logic, Design</h3>
                 </div> -->
+            <a href="">
               <div class="overlay-text">
                 <p>View Project</p>
+                <i class="fas fa-angle-right"></i>
               </div>
-            </div>
+            </a>
+          </div>
         </div>
       </div>
   </div>
 </div>
 <% include partials/footer.ejs %>
+
+<!-- <script>
+  let blur = document.querySelectorAll(".overlay");
+  // console.log(blur);
+  blur.forEach(er => er.addEventListener("mouseover", blurOut));
+  function blurOut(e) {
+    // console.log(e);
+    var blur_img = document.querySelector(".project-image");
+    console.log(blur_img);
+    blur_img.classList.toggle('blurredOut');
+    // console.log(e);
+    // var clickedItem = e.target.id;
+    // console.log(clickedItem);
+  }
+  // var blur = document.querySelectorAll(".overlay-text");
+  //   blur.forEach(er => er.addEventListener("mouseover", blurOut));
+  //   console.log(er);
+  //   function blurOut(e) {
+  //     console.log(e);
+  //     // var blur_img = document.querySelector(".project-image");
+  //     // console.log(blur_img);
+  //     // blur_img.classList.add('blurredOut');
+  //     // console.log(e.path[]);
+  //     // console.log(e);
+  //     // var clickedItem = e.target.id;
+  //     // console.log(clickedItem);
+  //   }
+</script> -->

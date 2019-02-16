@@ -30,8 +30,10 @@ p {
 	text-align: center;
 	padding: 5rem;
 	.home-subtitle {
-		font-size: 24px;
-		color: #63707e;
+		letter-spacing: 0.05rem;
+		font-family: 'Domine', sans-serif;
+		font-size: 2.3rem;
+		color: #565f69;
 	}
 }
 
@@ -45,11 +47,44 @@ p {
 .section-description {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
-	font-size: 2rem;
+	font-size: 1.9rem;
 }
 
-.row {
-	margin-top: 4rem;
+.section-description-right {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.6rem;
+	margin-left: 1rem;
+}
+
+.section-header-right {
+	font-family: 'Noto Serif', sans-serif;
+	font-size: 2.3rem;
+}
+
+.section-subheader-right {
+	font-size: 1.8rem;
+}
+
+.project-right-view {
+	position: relative;
+  left: 11rem;
+  width: 85%;
+  padding: 1rem;
+	background-color: #33485F;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3px;
+	border: 1px solid transparent;
+	& p {
+		margin-bottom: 0;
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: left;
+	}
 }
 
 .navbar-header {
@@ -79,9 +114,10 @@ p {
 	justify-content: flex-end;
 	padding: 2rem 2rem 0rem 0rem;
 	li {
+		font-family: 'Noto Serif', sans-serif;
 		padding: 2rem 2.5rem 2rem 2.5rem;
 		letter-spacing: 0.1rem;
-		text-transform: uppercase;
+		// text-transform: uppercase;
 		font-weight: 500;
     font-size: 2rem;
 		font-size: 1.7rem;
@@ -95,20 +131,21 @@ p {
 }
 
 .box-white {
-	padding: 14rem 0 14rem 0;
-	width: 100%;
-	margin: 0 auto;
+	// padding: 14rem 0 14rem 0;
+	// width: 100%;
+	// margin: 0 auto;
 }
 
 .section-title {
-		font-size: 4rem;
-		text-transform: uppercase;
+		font-size: 3.5rem;
+		font-family: 'Noto Serif', sans-serif;
+		// text-transform: uppercase;
 		font-weight: bold;
 }
 
 .subsection {
 	font-size: 2rem;
-	margin-bottom: 5rem;
+	margin-bottom: 2rem;
 }
 
 .sub {
@@ -175,7 +212,7 @@ p {
 }
 
 .project-descr:hover .overlay {
-	  height: 15%;
+	  height: 18%;
 }
 
 .overlay {
@@ -185,7 +222,8 @@ p {
 	right: 0;
 	width: 100%;
 	height: 0;
-	transition: .7s ease;
+	transition: .6s ease;
+
 	}
 	.overlay-text {
 		width: 90%;
@@ -193,17 +231,27 @@ p {
 		transform: translate(7%, 0%);
 		white-space: nonwrap;
 	  overflow: hidden;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		background-color: #33485F;
+		border-radius: 3px;
+		border: 1px solid transparent;
+		padding: 1rem;
 		p {
+			margin-bottom: 0;
 			color: white;
 			font-size: 1.5rem;
 			width: 100%;
-			padding: .5rem;
 			text-align: left;
-			border-radius: 4px;
-			border: 1px solid transparent;
-			background-color: #33485F;
 		}
 	}
+
+.fa-angle-right {
+	color: white;
+	font-size: 1.5rem;
+}
 
 .text {
   color: white;
@@ -239,6 +287,13 @@ p {
 	display: block;
 	width: 100%;
 	height: auto;
+	&:hover {
+		filter: blur(2px);
+		// transform: scale(.9);
+	}
+}
+.blurredOut {
+	filter: blur(2px);
 }
 
 .project-mobile {
@@ -253,9 +308,11 @@ p {
 }
 
 .project-logo {
-  margin: 0 auto;
-	width: 28rem;
-	padding: 0rem 3rem 0rem 0rem;
+	background-color: white;
+	padding: 1rem;
+	width: 30rem;
+	padding: 2rem 3rem 2rem 3rem;
+	border: 2px solid #efefef;
 }
 
 .projects {
@@ -288,24 +345,36 @@ p {
 }
 
 .user-flow-outline {
-	padding: 2rem;
 	margin-bottom: 4rem;
 	background: white;
-	width: 58rem;
+	width: 45rem;
 	box-shadow: 0.2rem 0.2rem 3rem rgba(0, 0, 0, 0.3);
 }
 
-.box {
-	padding: 14rem 0rem 14rem 0rem;
+.side-wrapper {
+	padding: 6rem 0rem 6rem 0rem;
 	width: 100%;
 	margin: 0 auto;
 	// background: #f6f6f6;
-  background-image: linear-gradient(180deg, rgb(233, 240, 245) 0, #FEFEFE 100%)
+  // background-image: linear-gradient(180deg, rgb(233, 240, 245) 0, #FEFEFE 100%)
 }
 
-.inner {
-	width: 60%;
-	margin: 0 auto;
+.box {
+	padding: 6rem 0rem 0rem 0rem;
+}
+
+.inner-left {
+	width: 86%;
+	float: right;
+}
+
+.inner-right {
+	width: 70%;
+	margin-left: 5rem;
+	float: left;
+	margin: 0rem 0rem 4rem 5rem;
+	background-color: #f5f6f7;
+	padding: 4rem;
 }
 
 .end-product-images {
@@ -337,6 +406,13 @@ p {
 	padding: 3rem;
   justify-content: center;
   flex-direction: column;
+}
+
+.projects-page {
+	display: flex;
+	.left-side {
+		width: 60%;
+	}
 }
 .about-me {
 	padding: 6rem 0rem 0rem 0rem;
