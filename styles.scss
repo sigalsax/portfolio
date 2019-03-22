@@ -10,7 +10,12 @@
 
 html { font-size: 62.5%; }
 
-li { list-style: none; }
+li {
+	list-style: none;
+	font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.9rem;
+}
 
 body {
 	font-family: 'Roboto', Helvetica, Arial, sans-serif !important;
@@ -309,10 +314,12 @@ p {
 
 .project-logo {
 	background-color: white;
-	padding: 1rem;
-	width: 30rem;
-	padding: 2rem 3rem 2rem 3rem;
+	width: 100%;
+	padding: 1rem 1rem 1rem 1rem;
 	border: 2px solid #efefef;
+}
+.project-image-wrapper {
+	margin-bottom: 3rem;
 }
 
 .projects {
@@ -353,15 +360,22 @@ p {
 
 .side-wrapper {
 	padding: 6rem 0rem 6rem 0rem;
-	width: 100%;
-	margin: 0 auto;
+  width: 65%;
+  margin: 0 auto;
 	// background: #f6f6f6;
   // background-image: linear-gradient(180deg, rgb(233, 240, 245) 0, #FEFEFE 100%)
 }
 
 .box {
+	width: 92%;
 	padding: 6rem 0rem 0rem 0rem;
+	margin: 0 auto;
 }
+
+ .box-full {
+	 width: 70%;
+	 margin: 0 auto;
+ }
 
 .inner-left {
 	width: 86%;
@@ -369,7 +383,7 @@ p {
 }
 
 .inner-right {
-	width: 70%;
+	width: 60%;
 	margin-left: 5rem;
 	float: left;
 	margin: 0rem 0rem 4rem 5rem;
@@ -381,14 +395,6 @@ p {
 	display: flex;
 	justify-content: center;
 	padding-top: 5rem;
-}
-
-.end-product-box {
-  // padding: 15rem 10rem 10rem 10rem;
-}
-
-.end-product-inner {
-	// padding: 0rem 0rem 0rem 11rem;
 }
 
 .end-product-computer {
@@ -410,15 +416,28 @@ p {
 
 .projects-page {
 	display: flex;
-	.left-side {
-		width: 60%;
+	flex-direction: column;
+	.projects-page-top {
+		display: flex;
+		width: 92%;
+		margin: 0 auto;
+		.left-side {
+			width: 80%;
+	    margin: 0rem 5rem 0rem 6rem;
+		}
+	}
+	.projects-page-bottom {
+		width: 78%;
+		margin: 0 auto;
 	}
 }
+
 .about-me {
 	padding: 6rem 0rem 0rem 0rem;
 	.about {
 		display: flex;
-		width: 60%;
+		width: 70%;
+		margin: 0 auto;
 		img {
 			width: 45rem;
     	height: 40rem;
@@ -453,6 +472,7 @@ p {
 	width: 100%;
 	background-color: #33485F;
   margin: 0 auto;
+	margin-top: 3rem;
 	.footer-wrapper {
 		text-align: center;
 	}
@@ -475,4 +495,9 @@ p {
 			}
 		}
 	}
+}
+
+.projects-page-rest {
+	display: flex;
+	justify-content: center;
 }

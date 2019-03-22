@@ -75,5 +75,13 @@ app.get('/kosher-wanderer', function(req, res){
   res.render('kosher-wanderer');
 });
 
+app.get('/impact', function(req, res){
+  res.render('impact');
+});
+
+app.get('/resume', function(req, res){
+  res.render('resume');
+});
+
 // app.listen(3000);
 app.listen(5000, () => console.log('SERVER RUNNING ON PORT 5000'));

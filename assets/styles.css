@@ -11,7 +11,10 @@ html {
   font-size: 62.5%; }
 
 li {
-  list-style: none; }
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.9rem; }
 
 body {
   font-family: 'Roboto', Helvetica, Arial, sans-serif !important; }
@@ -261,10 +264,12 @@ p {
 
 .project-logo {
   background-color: white;
-  padding: 1rem;
-  width: 30rem;
-  padding: 2rem 3rem 2rem 3rem;
+  width: 100%;
+  padding: 1rem 1rem 1rem 1rem;
   border: 2px solid #efefef; }
+
+.project-image-wrapper {
+  margin-bottom: 3rem; }
 
 .projects .row {
   margin-right: 0;
@@ -295,18 +300,24 @@ p {
 
 .side-wrapper {
   padding: 6rem 0rem 6rem 0rem;
-  width: 100%;
+  width: 65%;
   margin: 0 auto; }
 
 .box {
-  padding: 6rem 0rem 0rem 0rem; }
+  width: 92%;
+  padding: 6rem 0rem 0rem 0rem;
+  margin: 0 auto; }
+
+.box-full {
+  width: 70%;
+  margin: 0 auto; }
 
 .inner-left {
   width: 86%;
   float: right; }
 
 .inner-right {
-  width: 70%;
+  width: 60%;
   margin-left: 5rem;
   float: left;
   margin: 0rem 0rem 4rem 5rem;
@@ -333,15 +344,25 @@ p {
   flex-direction: column; }
 
 .projects-page {
-  display: flex; }
-  .projects-page .left-side {
-    width: 60%; }
+  display: flex;
+  flex-direction: column; }
+  .projects-page .projects-page-top {
+    display: flex;
+    width: 92%;
+    margin: 0 auto; }
+    .projects-page .projects-page-top .left-side {
+      width: 80%;
+      margin: 0rem 5rem 0rem 6rem; }
+  .projects-page .projects-page-bottom {
+    width: 78%;
+    margin: 0 auto; }
 
 .about-me {
   padding: 6rem 0rem 0rem 0rem; }
   .about-me .about {
     display: flex;
-    width: 60%; }
+    width: 70%;
+    margin: 0 auto; }
     .about-me .about img {
       width: 45rem;
       height: 40rem;
@@ -366,7 +387,8 @@ p {
   padding: 3rem 3rem 3rem 3rem;
   width: 100%;
   background-color: #33485F;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 3rem; }
   .footer .footer-wrapper {
     text-align: center; }
   .footer .footer-description {
@@ -384,5 +406,9 @@ p {
       .footer .footer-icons .footer-icon-list .icon {
         margin: 1rem;
         font-size: 2.6rem; }
+
+.projects-page-rest {
+  display: flex;
+  justify-content: center; }
 
 /*# sourceMappingURL=styles.css.map */
