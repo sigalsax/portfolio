@@ -16,7 +16,7 @@
         <div class="solution-info inner-left box">
           <h3 class="section-title">The Solution</h3>
           <h2 class="subsection">Build an app!</h2>
-          <p class="section-description">The solution would be a game similar to Capture the Flag. A flag would be defined as an username, password, and SSH key. Users would be tasked to find these flags on production computers according to hints in scenarios displayed on the production computers. For example, flags could be hidden in emails, images, icons, computer configurations, etc. Each flag has different numerical scores depending on the level of difficulty to solve. Participants would be tasked to find as many credential pair vulnerabilities within 10 minutes and place them into the application’s allotted fields. </p>
+          <p class="section-description">The solution is a game similar to a virtual version of Capture the Flag. A flag is defined as an combination of usernames, passwords, and SSH keys. Users are tasked to find these flags/hints to a flag location on the computer by 'thinking like an attacker' and working to mine sensitive information. For example, flags could be hidden in emails, images, icons, computer configurations, etc. Each flag has different numerical scores depending on its difficulty level to find it. Participants are tasked to find as many credential pair vulnerabilities within 10 minutes and place them into the application’s allotted fields. </p>
         </div>
         <div class="user-flow">
           <div class="user-flow-info info">
@@ -54,35 +54,52 @@
       </div>
     </div>
   </div>
+
   <div class="projects-page-bottom">
+    <div class="challenge">
+      <div class="challenge-box box">
+        <h3 class="section-title">The Restrictions & Decision(s)</h3>
+        <p class="section-description">Before starting, I was given restrictions on what languages I could code in to build the application. Because I initially thought to create an extensive UI with a light back-end, I leaned toward a scripting language. After reviewing the project’s scope, I realized that it called for a heavier and more secure back-end and needed a backend language. This led me to two powerful languages, Java and C#.
+          I knew the application was going to be run on Windows and I wanted the application to have an expressive GUI capabilities. Although my programming back-end knowledge is strongest in Java, I opted for C# with a .NET Framework. It is important to note that I have never before programmed in C# before or developed a GUI, but I saw this challenge as an opportunity to learn by throwing myself in to the very deep deep end.
+        </p>
+        <p class="section-description">
+          I had a month to build this application from start to finish. Since this application wasn't within the scope of my internship work, the coding had to happen after hours. Each feedback cycle included a night or two of coding followed by an early morning presentation of what was accomplished during the previous nights. I would receive feedback and then return home and continue. This cycle lasted until the final project due date.
+        </p>
+        <p class="section-description">
+        </p>
+      </div>
+    </div>
+
     <div class="end-product box">
         <div class="end-product-inner">
           <h3 class="section-title">End Product</h3>
-          <p class="section-description">The purpose of this application was to align with the
+          <p class="section-description">The purpose of this application is to align with the
             conference's theme of 'thinking like an attacker'. At the conference, there were 4
             production-style computers with flags (a combination of username,
-            password, IP address and/or SSH keys). It was the participant's job to think as an
-            attacker would and work to exploit as many of these vulnerabilities within a 10 minute time period.
-            They would input these credentials into my program's flag fields and if correct, the user is able
+            password, IP address and/or SSH keys). Each participant was to input these credentials into my program's flag fields and if correct, the user was able
             to advance to finding the next flag. With each flag entry, my application
             would capture info about the specific flag, the associated score,
             and the time in which the player found the flag. Once the user either exits
-            or finishes the game, content of a player's session will be encrypted to a separate .txt
-            file. We wanted to encrypt the files after each user session in order to prevent cheating
-            across different player sessions. After each session, a script would run that would erase
-            search history, cache, and other information that would give other's hints from previous sessions.</p>
-          <p class="section-description">At the end of the event, I harvested the encrypted data by entering
-            the appropriate decryption key. In doing so, an .xlsx file was returned with the summation of the day's
+            or finishes the game, content of a player's session was encrypted to a separate .txt
+            file.
+          </p>
+          <p class="section-description">As part of my program, each session's files were encrypted in order to prevent cheating
+            across different player sessions. After each session, a script was run that would erase
+            session's search history, cache, and other information that would give others hints from previous sessions.
+          </p>
+          <p class="section-description">At the end of the event, I harvested the encrypted data with
+            the associated decryption key. In doing so, an .xlsx file was returned with the summation of the day's
             players' sessions (names, emails, flag information, time-ended, etc).</p>
           <p class="section-description">
           </p>
           <h2 class="section-header-right">The Backend</h2>
             <ul>
+              <li>Written in C#</li>
               <li>Calculations based on differing scenarios of flag retrieval</li>
-              <li>Write to logs on production based off of computer flag type, time of each flag, score, and user information</li>
+              <li>Writes computer flag type, time of each flag, score, and user information to logs locally</li>
               <li>Encryption and decryption of logs in order to prevent cheating and conceal a previous user’s correct answers</li>
               <li>A script that would erase previous users clicks and search history after each session</li>
-              <li>Timers to keep track of each flag retrieval and when the allotted game time expired</li>
+              <li>Timers to keep track of each flag retrieval and when the allotted game time has expired</li>
             </ul>
         </div>
         <!-- <div class="end-product-images">
@@ -97,18 +114,7 @@
         </div> -->
     </div>
 
-    <div class="challenge">
-      <div class="challenge-box box">
-        <h3 class="section-title">The Restrictions & Decision(s)</h3>
-        <p class="section-description">Before starting, I was given restrictions on what languages I could code in to build the application. Because I initially thought to create an extensive UI with a light back-end, I leaned toward a scripting language. After reviewing the project’s scope, I realized that it called for a heavier and more secure backend. This led me to two powerful languages, Java and C#.  I knew the application was to be run on Windows and I wanted the application to have an expressive GUI capabilities. Although my programming back-end knowledge is strongest in Java, I opted for C# with .NET Framework. It is important to note that I have never before programmed in C# before or developed a GUI, but I took this challenge on.
-        </p>
-        <p class="section-description">
 
-        </p>
-        <p class="section-description">
-        </p>
-      </div>
-    </div>
 
     <div class="outcome">
       <div class="outcome-inner box">
@@ -121,6 +127,16 @@
         </ul>
       </div>
     </div>
+
+    <div class="reflection">
+      <div class="reflection-inner box">
+        <h3 class="section-title">Reflection</h3>
+        <p class="section-description">
+        This experience was brilliant! This application was my first real taste of professional back-end developing (while in school). I felt empowered because I had complete ownership. For every coding or conceptual obstacle, it up to me to figure it out technically.
+        </p>
+      </div>
+    </div>
+
   </div>
 </div>
 

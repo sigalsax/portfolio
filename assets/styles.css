@@ -363,6 +363,7 @@ p {
   flex-direction: column; }
 
 .projects-page {
+  width: 100%;
   display: flex;
   flex-direction: column; }
   .projects-page .projects-page-top {
