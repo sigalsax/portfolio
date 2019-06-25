@@ -1,34 +1,35 @@
 <% include partials/head.ejs %>
 <% include partials/nav.ejs %>
 
-<div class="about-me box-white">
-  <div class="about inner">
-    <div class="section-about-me">
-      <h3 class="section-title">About me</h3>
-      <p class="section-description">
-        I moved to from Boston to IL in search of a NEW adventure and a NEW challenge after finishing up
-        my degree in Computer Science and Psychology. I quickly found my way to Tel Aviv where I enjoy the
-        very hot summers and suffer through the cold winters.
-      </p>
-      <p class="section-description">
-        I love to build, to learn, and to ask questions. I ask an inordinate amount of questions in order to understand the full
-        picture of the tech I work on. For me, it is not enough to submit code that works- I must refactor until it is great!
-      </p>
-    </div>
-      <img class="about-me-img" src="images/mesquare.png">
-  </div>
-</div>
-<div class="contact box-full">
-  <div class="contact-info inner">
-    <h3 class="section-title">Contact Me</h3>
-    <form id ="contact-form" method="POST" action="/contact">
-      <div class="contact-row">
-        <h3><input type="text" class="contact-field-area" name="firstname" value="Avo Cado"></h3>
-        <h3><input type="text" class="contact-field-area" name="email" value="avo@avocadobrain.com"></h3>
+<div class="contact">
+  <div class="about-me box-white">
+    <div class="about inner">
+      <div class="section-about-me">
+        <h1>Hello,</h1>
+        <p class="section-description">
+          I moved to from Boston to IL in search of a different style of living and a new challenge after finishing up
+          my degree in Computer Science and Psychology. I quickly found my way to Tel Aviv where I enjoy the
+          very hot summers and suffer through the cold winters.
+        </p>
+        <p class="section-description">
+          I love to build, to learn, and to ask questions. I get excited by code and love the  until it is great!
+        </p>
       </div>
-      <h3><textarea type="text" name="message" class="contact-field-message" rows="10" cols="76">Message...</textarea></h3>
-      <input type="submit" class="primary-btn" value="submit"/>
-      <p> <%=qs.firstname %> </p>
+        <img class="about-me-img" src="images/mesquare.png">
+    </div>
+  </div>
+  <div class="contact-box">
+    <div class="contact-info inner">
+      <h3 class="section-title">Contact Me</h3>
+      <form id ="contact-form" method="POST" action="/contact">
+        <div class="contact-row">
+          <h3><input type="text" class="contact-field-area" name="firstname" value="Avo Cado"></h3>
+          <h3><input type="text" class="contact-field-area" name="email" value="avo@avocadobrain.com"></h3>
+        </div>
+        <h3><textarea type="text" name="message" class="contact-field-message" rows="10" cols="76">Message...</textarea></h3>
+        <input type="submit" class="primary-btn" value="submit"/>
+        <p> <%=qs.firstname %> </p>
+    </div>
   </div>
 </div>
 <% include partials/footer.ejs %>

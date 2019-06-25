@@ -79,6 +79,10 @@ app.get('/impact', function(req, res){
   res.render('impact');
 });
 
+app.get('/site', function(req, res){
+  res.render('site');
+});
+
 app.get('/resume', function(req, res){
   res.render('resume');
 });

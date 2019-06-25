@@ -2,10 +2,17 @@
 <% include partials/head.ejs %>
 <body>
   <% include partials/nav.ejs %>
-  <div class="home-subtitle-wrapper">
-      <h1>Developer. Front/Back. Designer. Lover of all things technical.</h1>
-      <h3>Hi, I am Sigal! I am a developer based out of Tel Aviv, Israel. In my spare time, I paint and inhale avocados.</h3>
-
+  <div class="contact">
+    <div class="about-me box-white">
+      <div class="home-subtitle-wrapper">
+        <div class="about inner">
+          <div class="section-about-me">
+            <h1>Developer. Front/Back. Designer. Lover of all things technical.</h1>
+            <p class="section-description-right"> Hi, I am Sigal! I am a developer based out of Tel Aviv, Israel. In my spare time, I paint and inhale avocados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
       <!-- <h2 class="home-subtitle">Freelance web developer based out of Tel Aviv, Israel. In my spare time, I paint and inhale avocados.</h2> -->
   </div>
   <div class="projects-wrapper wrapper">
@@ -19,7 +26,7 @@
             Interactive capture the flag app for Cyberark's 2017 IMPACT Conference where users get a chance to think like an attacker.
             </p>
             <a href= "impact">
-              <div class="overlay-text">
+              <div class="overlay-text primary-btn">
                 <p>View Project</p>
                 <i class="fas fa-angle-right"></i>
               </div>
@@ -34,22 +41,22 @@
             Informative travel blog website that provides recipes and guidelines on how to maintain a strict diet while traveling (Kosher, vegetarian, gluten-free, etc).
           </p>
           <a href= "kosher-wanderer">
-            <div class="overlay-text">
+            <div class="overlay-text primary-btn">
             <p>View Project</p>
             <i class="fas fa-angle-right"></i>
             </div>
           </a>
         </div>
       </div>
-      <div class="project-child kosher-wanderer">
+      <div class="project-child site">
         <div class="project-descr container">
-          <img src="images/kosherlogo.png" class="project-image project-computer">
-          <h2 class="section-header-right">Kosher Wanderer</h2>
+          <img src="images/avo_logo_one.png" class="project-image">
+          <h2 class="section-header-right">This site!</h2>
           <p class="section-description-right">
-            Informative travel blog website that provides recipes and guidelines on how to maintain a strict diet while traveling (Kosher, vegetarian, gluten-free, etc).
+            Informative site to showchase my past works and ravel blog website that provides recipes and guidelines on how to maintain a strict diet while traveling (Kosher, vegetarian, gluten-free, etc).
           </p>
-          <a href= "kosher-wanderer">
-            <div class="overlay-text">
+          <a href= "site">
+            <div class="overlay-text primary-btn">
             <p>View Project</p>
             <i class="fas fa-angle-right"></i>
             </div>
@@ -62,13 +69,17 @@
   <div class="blog-wrapper wrapper">
     <h2 class="home-subtitle">Blog</h2>
     <div class="blogs-parent">
+      <div class="blog-box">
       <div class="blog-sec-mod blog-entry">
         <a href="https://blog.conjur.org/managing-secrets-in-devops-a-maturity-model/" target="_blank"><img src="images/blog-sec-model.png" class="blog-img"></a>
         <p class="section-description-right">How would you assess your team’s current cyber security level within your organization? If you’re like most, your team is...</p>
       </div>
+      </div>
+      <div class="blog-box">
       <div class="blog-sec-mod blog-entry">
         <a href="https://secretless.io/blog/2019/03/04/getting-going.html" target="_blank"><img src="images/blog-go-secretless.png" class="blog-img"></a>
         <p class="section-description-right">Why we chose Go for our open-source project, Secretless Broker, and how this decision has impacted our development process!</p>
+      </div>
       </div>
     </div>
   </div>
