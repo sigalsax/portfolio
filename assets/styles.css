@@ -175,7 +175,7 @@ p {
   margin: 0rem 0rem 3rem 5rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   position: relative;
-  min-height: 38rem;
+  min-height: 43rem;
   width: 42rem; }
 
 .primary-btn {
@@ -276,6 +276,7 @@ p {
   height: auto; }
 
 .project-descr img {
+  height: 15rem;
   margin: 0 auto;
   padding-bottom: 2rem;
   width: 28rem;
