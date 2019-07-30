@@ -135,6 +135,15 @@ p {
     width: 100%;
     text-align: left;
 	}
+	a {
+		color: white;
+	}
+	a:hover {
+		color: white;
+		text-decoration: none;
+
+
+	}
 }
 
 .navbar-header {
@@ -164,7 +173,7 @@ p {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	margin-left: 60%;
+	width: 100%;
 	padding: 2rem 2rem 0rem 0rem;
 	li {
 		// font-family: 'Noto Serif', sans-serif;
@@ -504,7 +513,7 @@ p {
 		// padding: 12rem 4rem 0rem 4rem;
 		.about {
 			display: flex;
-			width: 70%;
+			width: 80%;
 			margin: 0 auto;
 			img {
 				width: 45rem;
