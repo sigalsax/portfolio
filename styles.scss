@@ -30,6 +30,9 @@ p {
 	// font-family: 'Noto Serif', serif;
 }
 
+.wrapper-banner {
+	background-image: url("../images/polkadot.png")
+}
 .footer-icon-list > a {
 	color: white;
 }
@@ -44,7 +47,7 @@ p {
 		color: #565f69;
 	}
 	.section-description-right {
-		font-size: 2rem;
+		font-size: 1.8rem;
 	}
 	img {
 		padding-top: 1rem;
@@ -53,7 +56,7 @@ p {
 }
 
 .wrapper {
-	padding: 5rem 15rem 5rem 15rem;
+	padding: 5rem 3rem 5rem 3rem;
 }
 
 .home-subtitle {
@@ -62,7 +65,10 @@ p {
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #374850;
-	font-size: 3rem;
+	font-size: 2.6rem;
+	letter-spacing: 0.05em;
+	line-height: 1.45em;
+	text-transform: uppercase;
 }
 
 .projects-wrapper {
@@ -137,6 +143,7 @@ p {
 	}
 	a {
 		color: white;
+		transition: .25s;
 	}
 	a:hover {
 		color: white;
@@ -183,7 +190,7 @@ p {
 		letter-spacing: 0.1rem;
 		font-weight: 500;
     font-size: 2rem;
-		font-size: 1.7rem;
+		font-size: 1.5rem;
 	}
 	& :hover {
 		text-decoration: none;
@@ -231,7 +238,7 @@ p {
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 	position: relative;
 	min-height: 43rem;
-	width: 42rem;
+	min-width: 35rem;
 }
 
 .primary-btn {
@@ -348,10 +355,10 @@ p {
 }
 
 .project-descr img {
-	height: 15rem;
+	height: 13rem;
 	margin: 0 auto;
 	padding-bottom: 2rem;
-	width: 28rem;
+	width: 24rem;
 	-webkit-transition: 0.6s ease;
 	transition: 0.6s ease;
 }
@@ -503,7 +510,7 @@ p {
 	}
 }
 
-.contact {
+.wrapper-banner-content {
 	padding: 12rem 4rem 0rem 4rem;
 	.contact-box {
 		width: 70%;
@@ -522,21 +529,21 @@ p {
 				z-index: 2;
 			}
 			.section-about-me {
-			h1 {
-				font-family: brandon-grotesque;
-				font-weight: 700;
-		    font-style: normal;
-		    font-size: 30px;
-		    letter-spacing: .18em;
-		    line-height: 1.45em;
-		    text-transform: uppercase
+				h2 {
+					font-family: brandon-grotesque;
+					font-weight: 700;
+			    font-style: normal;
+			    font-size: 2.6rem;
+			    letter-spacing: .18em;
+			    line-height: 1.45em;
+			    text-transform: uppercase
 				}
 			}
 		}
 	}
 }
 
-.contact {
+.wrapper-banner-content {
 	z-index: 1;
 	margin-top: -8rem;
 	.contact-row {
