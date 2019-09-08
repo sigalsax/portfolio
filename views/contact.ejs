@@ -1,7 +1,8 @@
+<div class="wrapper-banner">
 <% include partials/head.ejs %>
 <% include partials/nav.ejs %>
 
-<div class="contact">
+<div class="wrapper-banner-content">
   <div class="about-me box-white">
     <div class="about inner">
       <div class="section-about-me">
@@ -26,10 +27,11 @@
           <h3><input type="text" class="contact-field-area" name="firstname" value="Avo Cado"></h3>
           <h3><input type="text" class="contact-field-area" name="email" value="avo@avocadobrain.com"></h3>
         </div>
-        <h3><textarea type="text" name="message" class="contact-field-message" rows="10" cols="76">Message...</textarea></h3>
+        <h3><textarea type="text" name="message" class="contact-field-message">Message...</textarea></h3>
         <input type="submit" class="primary-btn" value="submit"/>
         <p> <%=qs.firstname %> </p>
     </div>
   </div>
+</div>
 </div>
 <% include partials/footer.ejs %>

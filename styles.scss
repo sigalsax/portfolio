@@ -37,7 +37,7 @@ p {
 	color: white;
 }
 .home-subtitle-wrapper {
-	max-width: 60%;
+	max-width: 80%;
 	margin: 0 auto;
 	text-align: center;
 	padding: 3rem 5rem 11rem 5rem;
@@ -79,7 +79,7 @@ p {
 }
 
 .blogs-parent {
-	width: 60%;
+	width: 70%;
 	display: flex;
 	.blog-box {
 		transition: .6s;
@@ -88,6 +88,7 @@ p {
 		}
 	}
 	.blog-entry {
+		height: 30rem;
 		background-color: #F7F8FA;
 		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 	}
@@ -114,8 +115,14 @@ p {
 }
 
 .section-header-right {
-	font-family: 'Noto Serif', sans-serif;
+	font-family: brandon-grotesque;
+	font-weight: 600;
+	text-transform: uppercase;
 	font-size: 2.3rem;
+}
+.fa-caret-right {
+	color: #33485F;
+	margin-right: .5rem;
 }
 
 .section-subheader-right {
@@ -227,18 +234,17 @@ p {
 	// padding: 5rem;
 	// background: #f5f5f5;
   display: flex;
-	justify-content: center;
+	justify-content: space-between;
   margin: 0 auto;
   transition: 1s; }
 
 .project-child {
 	background: #ffff;
-	padding: 0rem 0rem 0rem 0rem;
-	margin: 0rem 0rem 3rem 5rem;
+  margin: 0rem 2rem 0rem 2rem;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 	position: relative;
-	min-height: 43rem;
-	min-width: 35rem;
+	height: 40rem;
+	width: 35rem;
 }
 
 .primary-btn {
@@ -281,7 +287,7 @@ p {
 
 .project-descr {
 	background: white;
-	padding: 5rem;
+	padding: 3rem;
 	position: relative;
 	width: 80%;
 	margin: 0 auto;
@@ -523,8 +529,8 @@ p {
 			width: 80%;
 			margin: 0 auto;
 			img {
-				width: 45rem;
-	    	height: 40rem;
+				width: 45%;
+	    	height: 40%;
 				margin-left: 5rem;
 				z-index: 2;
 			}
@@ -549,13 +555,14 @@ p {
 	.contact-row {
 		display: flex;
 		.contact-field-area {
-			width: 36rem;
-			height: 6rem;
+			max-width: 36rem;
+			max-height: 6rem;
 			margin: 2rem 2rem 0rem 0rem;
 			padding: 2rem;
 		}
 	}
 	.contact-field-message {
+		width: 100%;
 		margin: 2rem 0rem 0rem 0rem;
 		padding: 2rem;
 	}
@@ -643,5 +650,55 @@ p {
 
 .right-side {
 	animation: fadeInRight 1s;
+}
 
+// MEDIA TAGS
+@media only screen and (max-width: 992px) {
+	.section-title {
+		font-size: 2.5rem
+	}
+	.section-description {
+		font-size: 1.6rem;
+	}
+	.box li{
+		font-size: 1.6rem;
+
+	}
+	.projects-page-top {
+		flex-direction: column-reverse;
+		.side-wrapper {
+			width: 100%;
+			padding: 3rem 0rem 3rem 0rem;
+		}
+		.side-wrapper .inner-right {
+			width: 100%;
+			margin-left: 0;
+			display: flex;
+			padding: 2rem;
+			.section-header {
+				width: 400rem;
+			}
+			.project-image-wrapper {
+				margin-bottom: 0;
+			}
+			.project-right-view {
+				display: none;
+			}
+		}
+		.project-logo {
+			width: 65%;
+		}
+		.kosher-logo {
+			width: 55%;
+		}
+	}
+	.inner-left {
+		width: 100%;
+	}
+	.inner-right {
+		margin: 0rem 0rem 2rem 5rem;
+	}
+	.box {
+		padding: 2rem 0rem 0rem 0rem;
+	}
 }
